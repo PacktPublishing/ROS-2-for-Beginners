@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <material name="green">
+        <color rgba="0 0.6 0 1" />
+    </material>
+
+    <material name="gray">
+        <color rgba="0.7 0.7 0.7 1" />
+    </material>
+
+</robot>
