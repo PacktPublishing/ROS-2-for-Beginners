@@ -1,0 +1,5 @@
+/turtle_controller:
+  ros__parameters:
+    color_1: [0, 0, 0]
+    color_2: [255, 255, 255]
+    turtle_velocity: 1.5

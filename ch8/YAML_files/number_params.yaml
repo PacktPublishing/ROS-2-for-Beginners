@@ -1,0 +1,26 @@
+/number_publisher:
+  ros__parameters:
+    number: 7
+    publish_period: 0.8
+
+/num_pub1:
+  ros__parameters:
+    number: 3
+    publish_period: 0.5
+
+/num_pub2:
+  ros__parameters:
+    number: 4
+    publish_period: 1.0
+
+/your_node:
+  ros__parameters:
+    bool_value: True
+    int_number: 5
+    float_number: 3.14
+    str_text: "Hello"
+    bool_array: [True, False, True]
+    int_array: [10, 11, 12, 13]
+    float_array: [7.5, 400.4]
+    str_array: ['Nice', 'more', 'params']
+    bytes_array: [0x01, 0xF1, 0xA2]

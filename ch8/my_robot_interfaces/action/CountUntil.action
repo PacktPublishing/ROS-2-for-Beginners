@@ -1,0 +1,9 @@
+# Goal
+int64 target_number
+float64 delay
+---
+# Result
+int64 reached_number
+---
+# Feedback
+int64 current_number
