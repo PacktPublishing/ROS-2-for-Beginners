@@ -1,0 +1,20 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node" namespace="t1">
+        <param from="$(find-pkg-share my_robot_bringup)/config/turtle_params.yaml" />
+    </node>
+    <node pkg="turtlesim" exec="turtlesim_node" namespace="t2">
+        <param from="$(find-pkg-share my_robot_bringup)/config/turtle_params.yaml" />
+    </node>
+    <node pkg="turtle_controller" exec="turtle_controller" namespace="t1">
+        <param from="$(find-pkg-share my_robot_bringup)/config/turtle_params.yaml" />
+        <remap from="/turtle1/pose" to="/t1/turtle1/pose" />
+        <remap from="/turtle1/cmd_vel" to="/t1/turtle1/cmd_vel" />
+        <remap from="/turtle1/set_pen" to="/t1/turtle1/set_pen" />
+    </node>
+    <node pkg="turtle_controller" exec="turtle_controller" namespace="t2">
+        <param from="$(find-pkg-share my_robot_bringup)/config/turtle_params.yaml" />
+        <remap from="/turtle1/pose" to="/t2/turtle1/pose" />
+        <remap from="/turtle1/cmd_vel" to="/t2/turtle1/cmd_vel" />
+        <remap from="/turtle1/set_pen" to="/t2/turtle1/set_pen" />
+    </node>
+</launch>

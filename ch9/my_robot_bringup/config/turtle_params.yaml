@@ -1,0 +1,23 @@
+/t1/turtlesim:
+  ros__parameters:
+    background_r: 128
+    background_g: 0
+    background_b: 0
+
+/t2/turtlesim:
+  ros__parameters:
+    background_r: 0
+    background_g: 128
+    background_b: 0
+
+/t1/turtle_controller:
+  ros__parameters:
+    color_1: [0, 0, 0]
+    color_2: [255, 255, 255]
+    turtle_velocity: 1.5
+
+/t2/turtle_controller:
+  ros__parameters:
+    color_1: [255, 255, 255]
+    color_2: [0, 0, 0]
+    turtle_velocity: 0.5
