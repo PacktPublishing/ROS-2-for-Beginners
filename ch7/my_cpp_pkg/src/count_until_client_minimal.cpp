@@ -19,6 +19,8 @@ public:
     {
         count_until_client_->wait_for_action_server();
         auto goal = CountUntil::Goal();
+        goal.target_number = target_number;
+        goal.delay = delay;
         auto options = rclcpp_action::Client<CountUntil>::SendGoalOptions();
         options.goal_response_callback = std::bind(&CountUntilClientNode::goalResponseCallback, this, _1);
         options.result_callback = std::bind(&CountUntilClientNode::goalResultCallback, this, _1);
